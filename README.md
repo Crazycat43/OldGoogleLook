@@ -7,12 +7,13 @@ i added this because its one of the things i remember being so amazed by as a yo
 1. File Structure
 Your extension should include the following files:
 
-scss
-Code kopiëren
 /your-extension-folder/
     ├── manifest.json
+    
     ├── content.js
+    
     ├── styles.css
+    
     ├── icon.png (optional)
 Each file has its own role:
 
