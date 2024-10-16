@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Old Google Look",
+  "version": "1.0",
+  "description": "Restores the old look of Google.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in total width/height */
+}
+
+/* General body styles */
+body {
+    background-color: #f5f5f5 !important; /* Light gray background for light mode */
+    color: #000 !important; /* Default text color */
+    font-family: Arial, sans-serif !important; /* Consistent font */
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222222 !important; /* Dark background for dark mode */
+        color: #ffffff !important; /* Light text color for dark mode */
+    }
+
+    /* Dark mode styles for specific elements */
+    a {
+        color: #1a0dab !important; /* Google link color */
+    }
+
+    h3 {
+        color: #ffffff !important; /* Headings color */
+    }
+
+    p {
+        color: #cccccc !important; /* Lighter text color for paragraphs */
+    }
+}
+
+/* Header styles */
+#header {
+    background-color: white !important; /* White header background */
+    border-bottom: 1px solid #dcdcdc !important; /* Bottom border */
+    height: 80px; /* Set height */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    padding: 0 20px; /* Padding */
+}
+
+/* Search input box */
+input.gLFyf {
+    width: 600px !important; /* Adjust width */
+    padding: 10px !important; /* Padding */
+    border: 1px solid #ccc !important; /* Border */
+    border-radius: 5px !important; /* Rounded corners */
+}
+
+/* Search button styles */
+input[name='btnK'] {
+    background-color: #4285f4 !important; /* Button background color */
+    color: white !important; /* Button text color */
+    padding: 10px 20px !important; /* Padding */
+    border: none !important; /* No border */
+    border-radius: 5px !important; /* Rounded corners */
+    cursor: pointer !important; /* Cursor style */
+    margin-left: 10px; /* Space between input and button */
+}
+
+/* Optional: Style the logo */
+#logo {
+    display: block; /* Ensure it is displayed */
+    margin: 10px auto; /* Centering */
+    max-height: 70px; /* Adjust height */
+}
+
+/* Additional link styles to mimic old Google look */
+a {
+    color: #1a0dab !important; /* Google link color */
+    text-decoration: none !important; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline !important; /* Underline on hover */
+}
+
+/* Additional styles for search results */
+h3 {
+    color: #1a0dab !important; /* Headings color */
+}
+
+p {
+    color: #4b4b4d !important; /* Text color */
+}
